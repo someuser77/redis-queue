@@ -15,7 +15,9 @@ Based on the fact redis runs lua scripts atomically.
 Just run the script load_script.sh
 ```$ ./load_script.sh ```
 Or you can run this command directly:
+
 ```$ cat enqueue.lua | redis-cli -x script load ```
+
 And copy the return sha into producer.js so it will know which script to run.
 
 ## Start the producer
